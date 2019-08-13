@@ -1,16 +1,24 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
+  position:absolute;
+  top:5px;
+  left:5px;
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 5vmin;
+  width: 5vmin;
   pointer-events: none;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #9fc6ff;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,3 +39,16 @@
     transform: rotate(360deg);
   }
 }
+
+h1, h2, h3, h4 {
+  color: #0e121f;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-top: 0;
+}
+

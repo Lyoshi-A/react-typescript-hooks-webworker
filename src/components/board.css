@@ -1,0 +1,120 @@
+.box {
+    display: inline-block;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+.off {
+    background-color: lightgray;
+}
+
+.on {
+    background-color: green;
+}
+
+.box:hover {
+    background: #00CCFF;
+}
+
+.center {
+    margin: auto;
+    display: table;
+    margin-top: 10px;
+}
+
+.grid {
+    width: 150px;
+    line-height: 0;
+    margin: auto;
+    box-shadow: 0 0 20px white;
+    margin-top: 20px;
+}
+
+.board {
+    width:90%;
+    padding-top: 0;
+    text-align: center;
+    background-color: floralwhite;
+    display: grid;
+    grid-template: repeat(20, 5%)/ repeat(20, 5%);
+    margin: 1% 5% 0 5%;
+    box-shadow: 0 0 20px #6a6a7a;
+    color: #212121;
+}
+
+.gridItemWhite {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    background: #fff;
+}
+
+.cellEmpty {
+    justify-self: stretch;
+    background-color: #fcf3f1;
+    word-break: break-all;
+}
+
+.cellEmpty:after {
+    content: "\\00a0";
+}
+
+.cellAlive {
+    justify-self: stretch;
+    background-color: #68b9ff;
+    word-break: break-all;
+}
+
+.cellAlive:after {
+    content: "\\00a0";
+}
+
+.canvas {
+    background-color: #dcc87f;
+    width:90%;
+    height:1296px;
+    padding-top: 0;
+    text-align: center;
+    margin: 0 5% 0 5%;
+    box-shadow: 0 0 20px #6a6a7a;
+}
+
+.controls {
+    width:100%;
+    top: 0;
+    left: 0;
+}
+
+button {
+    height: 3em;
+    width: 6em;
+    margin: 1em;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+button:hover {
+    color: black;
+    background-color: #00baff;
+}
+button:focus {
+    border: 1px solid #00baff;
+}
+button:active {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #f6ffff;
+}
