@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project implements "Game of Life" algorithm (Typescript, Hooks, Canvas)
 
+## Demo http://45.55.61.142:8084/
+
 ## Available Scripts
 
 In the project directory, you can run:

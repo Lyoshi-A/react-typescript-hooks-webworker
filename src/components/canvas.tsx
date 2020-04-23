@@ -45,7 +45,7 @@ export const Canvas = React.memo(({width, height, block, cells=[]}:CanvasProps) 
                      }, block):false
                  )
              })
-    }, [cells])
+    }, [cells])  // eslint-disable-line react-hooks/exhaustive-deps
 
     useCountRenders('Canvas')
     return <div className="canvas">

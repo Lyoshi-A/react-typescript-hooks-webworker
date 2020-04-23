@@ -67,7 +67,7 @@ export const Board = () => {
                     cells: res
                 }))
         })
-    },[life.tick])
+    },[life.tick])  // eslint-disable-line react-hooks/exhaustive-deps
 
     const startClick = () => {
         setNewInterval(setInterval(() => {
